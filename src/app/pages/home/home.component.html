@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="white-mdl-box">
+                <h4>{{ title }}</h4>
+                <hr>
+                <form >
+                    <div class="row d-xl-flex justify-content-xl-center form-group">
+                        <div class="col-8"><input [(ngModel)]="intext" class="form-control form-control-lg" type="{{ editType }}" placeholder= "{{ placeholder }}" id="field" name="field" ></div>
+                        <div class="col-8 mt-5"><button class="btn btn-send" type="submit" (click)="convert()">Conveter</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <div class="white-mdl-box">
+                <h4>Resultado</h4>
+                <hr>
+                <div class="resultado-wrapper">
+                    <h1 class="resultado">{{ result }}</h1>
+                    <div class="text-center" *ngIf="loading">
+                        <div class="spinner-border" role="status">
+                          <span class="sr-only"></span>
+                        </div>
+                    </div>
+                    <h1 class="resultado-empty">{{ alert }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --mainColor: #291e04;
+    --responseErrorColor: #8a3f3f;
+  }
+
+  html, body {
+    min-height: 100%;
+    overflow: auto;
+  }
+  
+  body {
+    background: linear-gradient(180deg, #f7ecd0, #fff7e2 100%);
+    background-repeat: no-repeat;
+    font-family: Alegreya, serif;
+    height: 100vh;
+  }
