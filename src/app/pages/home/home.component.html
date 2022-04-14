@@ -6,7 +6,7 @@
                 <hr>
                 <form >
                     <div class="row d-xl-flex justify-content-xl-center form-group">
-                        <div class="col-8"><input [(ngModel)]="intext" class="form-control form-control-lg" type="{{ editType }}" placeholder= "{{ placeholder }}" id="field" name="field" ></div>
+                        <div class="col-8"><input [(ngModel)]="intext" class="form-control form-control-lg" type="{{ editType }}" placeholder= "{{ placeholder }}" id="field" name="field" oninput="this.value = this.value.toUpperCase()"></div>
                         <div class="col-8 mt-5"><button class="btn btn-send" type="submit" (click)="convert()">Conveter</button></div>
                     </div>
                 </form>
